@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cola.cs" />
     <Compile Include="FrmAcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +65,7 @@
     <Compile Include="FrmVentanaPrincipal.Designer.cs">
       <DependentUpon>FrmVentanaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nodo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAcercaDe.resx">
