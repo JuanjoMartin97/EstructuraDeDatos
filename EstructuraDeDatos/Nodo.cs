@@ -26,7 +26,7 @@ namespace EstructuraDeDatos
         public String Nombre
         {
             get { return nom; } //retorna valor de la variable
-            set { nom = value; }//asigna un valor a la variable
+            set { nom = value; } //asigna un valor a la variable
         }
         public String Tramite
         {
