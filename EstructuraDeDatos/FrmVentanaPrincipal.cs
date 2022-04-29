@@ -38,5 +38,11 @@ namespace EstructuraDeDatos
             FrmCola ObjVentanta = new FrmCola();
             ObjVentanta.ShowDialog();
         }
+
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCola ObjVentanta = new FrmCola();
+            ObjVentanta.ShowDialog();
+        }
     }
 }

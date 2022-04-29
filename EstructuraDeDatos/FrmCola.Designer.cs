@@ -283,6 +283,7 @@ namespace EstructuraDeDatos
             this.Name = "FrmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinamica No lineal - Cola";
+            this.Load += new System.EventHandler(this.FrmCola_Load);
             this.GrbNuevoElemento.ResumeLayout(false);
             this.GrbNuevoElemento.PerformLayout();
             this.GrbElementoEliminado.ResumeLayout(false);
