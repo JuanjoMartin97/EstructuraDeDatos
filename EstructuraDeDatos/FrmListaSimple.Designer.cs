@@ -1,7 +1,7 @@
 ﻿
 namespace EstructuraDeDatos
 {
-    partial class FrmPila
+    partial class FrmListaSimple
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,8 @@ namespace EstructuraDeDatos
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lstPila = new System.Windows.Forms.ListBox();
-            this.dgvPila = new System.Windows.Forms.DataGridView();
+            this.lstListaSimple = new System.Windows.Forms.ListBox();
+            this.dgvListaSimple = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +53,7 @@ namespace EstructuraDeDatos
             this.label1 = new System.Windows.Forms.Label();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.GrbElementoEliminado.SuspendLayout();
             this.GrbNuevoElemento.SuspendLayout();
@@ -61,35 +61,35 @@ namespace EstructuraDeDatos
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.lstPila);
-            this.groupBox3.Controls.Add(this.dgvPila);
-            this.groupBox3.Location = new System.Drawing.Point(10, 241);
+            this.groupBox3.Controls.Add(this.lstListaSimple);
+            this.groupBox3.Controls.Add(this.dgvListaSimple);
+            this.groupBox3.Location = new System.Drawing.Point(9, 241);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(741, 286);
-            this.groupBox3.TabIndex = 7;
+            this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Listado en una Lista y una Grilla";
             // 
-            // lstPila
+            // lstListaSimple
             // 
-            this.lstPila.FormattingEnabled = true;
-            this.lstPila.Location = new System.Drawing.Point(6, 21);
-            this.lstPila.Name = "lstPila";
-            this.lstPila.Size = new System.Drawing.Size(296, 264);
-            this.lstPila.TabIndex = 1;
+            this.lstListaSimple.FormattingEnabled = true;
+            this.lstListaSimple.Location = new System.Drawing.Point(6, 21);
+            this.lstListaSimple.Name = "lstListaSimple";
+            this.lstListaSimple.Size = new System.Drawing.Size(296, 264);
+            this.lstListaSimple.TabIndex = 1;
             // 
-            // dgvPila
+            // dgvListaSimple
             // 
-            this.dgvPila.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPila.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvListaSimple.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaSimple.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvPila.Location = new System.Drawing.Point(320, 19);
-            this.dgvPila.Name = "dgvPila";
-            this.dgvPila.RowHeadersWidth = 51;
-            this.dgvPila.Size = new System.Drawing.Size(421, 267);
-            this.dgvPila.TabIndex = 0;
+            this.dgvListaSimple.Location = new System.Drawing.Point(320, 19);
+            this.dgvListaSimple.Name = "dgvListaSimple";
+            this.dgvListaSimple.RowHeadersWidth = 51;
+            this.dgvListaSimple.Size = new System.Drawing.Size(421, 267);
+            this.dgvListaSimple.TabIndex = 0;
             // 
             // Column1
             // 
@@ -114,11 +114,10 @@ namespace EstructuraDeDatos
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::EstructuraDeDatos.Properties.Resources.pila;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(246, 201);
-            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.Size = new System.Drawing.Size(253, 212);
+            this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
             // GrbElementoEliminado
@@ -130,16 +129,16 @@ namespace EstructuraDeDatos
             this.GrbElementoEliminado.Controls.Add(this.label5);
             this.GrbElementoEliminado.Controls.Add(this.label4);
             this.GrbElementoEliminado.Controls.Add(this.BtnEliminar);
-            this.GrbElementoEliminado.Location = new System.Drawing.Point(548, 12);
+            this.GrbElementoEliminado.Location = new System.Drawing.Point(522, 12);
             this.GrbElementoEliminado.Name = "GrbElementoEliminado";
-            this.GrbElementoEliminado.Size = new System.Drawing.Size(242, 201);
-            this.GrbElementoEliminado.TabIndex = 5;
+            this.GrbElementoEliminado.Size = new System.Drawing.Size(242, 212);
+            this.GrbElementoEliminado.TabIndex = 9;
             this.GrbElementoEliminado.TabStop = false;
             this.GrbElementoEliminado.Text = "Elemento Eliminado";
             // 
             // txtEliminarTramite
             // 
-            this.txtEliminarTramite.Location = new System.Drawing.Point(88, 135);
+            this.txtEliminarTramite.Location = new System.Drawing.Point(87, 122);
             this.txtEliminarTramite.Name = "txtEliminarTramite";
             this.txtEliminarTramite.ReadOnly = true;
             this.txtEliminarTramite.Size = new System.Drawing.Size(100, 20);
@@ -164,7 +163,7 @@ namespace EstructuraDeDatos
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 140);
+            this.label6.Location = new System.Drawing.Point(19, 127);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 6;
@@ -190,7 +189,7 @@ namespace EstructuraDeDatos
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(91, 178);
+            this.BtnEliminar.Location = new System.Drawing.Point(87, 183);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(96, 23);
             this.BtnEliminar.TabIndex = 1;
@@ -207,10 +206,10 @@ namespace EstructuraDeDatos
             this.GrbNuevoElemento.Controls.Add(this.label2);
             this.GrbNuevoElemento.Controls.Add(this.label1);
             this.GrbNuevoElemento.Controls.Add(this.BtnAgregar);
-            this.GrbNuevoElemento.Location = new System.Drawing.Point(280, 12);
+            this.GrbNuevoElemento.Location = new System.Drawing.Point(279, 12);
             this.GrbNuevoElemento.Name = "GrbNuevoElemento";
-            this.GrbNuevoElemento.Size = new System.Drawing.Size(237, 201);
-            this.GrbNuevoElemento.TabIndex = 4;
+            this.GrbNuevoElemento.Size = new System.Drawing.Size(237, 212);
+            this.GrbNuevoElemento.TabIndex = 8;
             this.GrbNuevoElemento.TabStop = false;
             this.GrbNuevoElemento.Text = "Nuevo Elemento";
             // 
@@ -272,20 +271,19 @@ namespace EstructuraDeDatos
             this.BtnAgregar.UseVisualStyleBackColor = true;
             this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
-            // FrmPila
+            // FrmListaSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 533);
+            this.ClientSize = new System.Drawing.Size(777, 536);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.GrbElementoEliminado);
             this.Controls.Add(this.GrbNuevoElemento);
-            this.Name = "FrmPila";
-            this.Text = "Estructura Dinamica No lineal - Pila";
-            this.Load += new System.EventHandler(this.FrmPila_Load);
+            this.Name = "FrmListaSimple";
+            this.Text = "FrmListaSimple";
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPila)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.GrbElementoEliminado.ResumeLayout(false);
             this.GrbElementoEliminado.PerformLayout();
@@ -298,8 +296,8 @@ namespace EstructuraDeDatos
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ListBox lstPila;
-        private System.Windows.Forms.DataGridView dgvPila;
+        private System.Windows.Forms.ListBox lstListaSimple;
+        private System.Windows.Forms.DataGridView dgvListaSimple;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

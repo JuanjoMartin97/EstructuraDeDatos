@@ -35,14 +35,20 @@ namespace EstructuraDeDatos
 
         private void colaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmCola ObjVentanta = new FrmCola();
-            ObjVentanta.ShowDialog();
+            FrmCola ObjVentana = new FrmCola();
+            ObjVentana.ShowDialog();
         }
 
         private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmCola ObjVentanta = new FrmCola();
-            ObjVentanta.ShowDialog();
+            FrmCola ObjVentana = new FrmCola();
+            ObjVentana.ShowDialog();
+        }
+
+        private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListaSimple ObjVentana = new FrmListaSimple();
+                ObjVentana.ShowDialog();
         }
     }
 }
