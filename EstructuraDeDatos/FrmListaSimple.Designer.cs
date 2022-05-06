@@ -37,11 +37,7 @@ namespace EstructuraDeDatos
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GrbElementoEliminado = new System.Windows.Forms.GroupBox();
-            this.txtEliminarTramite = new System.Windows.Forms.TextBox();
-            this.txtEliminarNombre = new System.Windows.Forms.TextBox();
-            this.txtEliminarCodigo = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.cmbLista = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.GrbNuevoElemento = new System.Windows.Forms.GroupBox();
@@ -122,11 +118,7 @@ namespace EstructuraDeDatos
             // 
             // GrbElementoEliminado
             // 
-            this.GrbElementoEliminado.Controls.Add(this.txtEliminarTramite);
-            this.GrbElementoEliminado.Controls.Add(this.txtEliminarNombre);
-            this.GrbElementoEliminado.Controls.Add(this.txtEliminarCodigo);
-            this.GrbElementoEliminado.Controls.Add(this.label6);
-            this.GrbElementoEliminado.Controls.Add(this.label5);
+            this.GrbElementoEliminado.Controls.Add(this.cmbLista);
             this.GrbElementoEliminado.Controls.Add(this.label4);
             this.GrbElementoEliminado.Controls.Add(this.BtnEliminar);
             this.GrbElementoEliminado.Location = new System.Drawing.Point(522, 12);
@@ -136,52 +128,20 @@ namespace EstructuraDeDatos
             this.GrbElementoEliminado.TabStop = false;
             this.GrbElementoEliminado.Text = "Elemento Eliminado";
             // 
-            // txtEliminarTramite
+            // cmbLista
             // 
-            this.txtEliminarTramite.Location = new System.Drawing.Point(87, 122);
-            this.txtEliminarTramite.Name = "txtEliminarTramite";
-            this.txtEliminarTramite.ReadOnly = true;
-            this.txtEliminarTramite.Size = new System.Drawing.Size(100, 20);
-            this.txtEliminarTramite.TabIndex = 9;
-            // 
-            // txtEliminarNombre
-            // 
-            this.txtEliminarNombre.Location = new System.Drawing.Point(88, 80);
-            this.txtEliminarNombre.Name = "txtEliminarNombre";
-            this.txtEliminarNombre.ReadOnly = true;
-            this.txtEliminarNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtEliminarNombre.TabIndex = 8;
-            // 
-            // txtEliminarCodigo
-            // 
-            this.txtEliminarCodigo.Location = new System.Drawing.Point(88, 36);
-            this.txtEliminarCodigo.Name = "txtEliminarCodigo";
-            this.txtEliminarCodigo.ReadOnly = true;
-            this.txtEliminarCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtEliminarCodigo.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 127);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Tramite:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 87);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Nombre:";
+            this.cmbLista.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLista.FormattingEnabled = true;
+            this.cmbLista.Location = new System.Drawing.Point(87, 92);
+            this.cmbLista.Name = "cmbLista";
+            this.cmbLista.Size = new System.Drawing.Size(121, 21);
+            this.cmbLista.TabIndex = 5;
+            this.cmbLista.SelectedIndexChanged += new System.EventHandler(this.cmbLista_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 39);
+            this.label4.Location = new System.Drawing.Point(18, 95);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 4;
@@ -195,6 +155,7 @@ namespace EstructuraDeDatos
             this.BtnEliminar.TabIndex = 1;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.TextChanged += new System.EventHandler(this.cmbLista_TextChanged);
             this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // GrbNuevoElemento
@@ -282,6 +243,7 @@ namespace EstructuraDeDatos
             this.Controls.Add(this.GrbNuevoElemento);
             this.Name = "FrmListaSimple";
             this.Text = "FrmListaSimple";
+            this.Load += new System.EventHandler(this.FrmListaSimple_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -303,11 +265,6 @@ namespace EstructuraDeDatos
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox GrbElementoEliminado;
-        private System.Windows.Forms.TextBox txtEliminarTramite;
-        private System.Windows.Forms.TextBox txtEliminarNombre;
-        private System.Windows.Forms.TextBox txtEliminarCodigo;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.GroupBox GrbNuevoElemento;
@@ -318,5 +275,6 @@ namespace EstructuraDeDatos
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnAgregar;
+        private System.Windows.Forms.ComboBox cmbLista;
     }
 }

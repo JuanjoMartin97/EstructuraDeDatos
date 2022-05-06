@@ -100,7 +100,30 @@ namespace EstructuraDeDatos
             }
         }
 
+        
+        public void Eliminar(Int32 codigo)
+        {
+
+            if (Primero.Codigo == codigo)
+            {
+                Primero = Primero.Siguiente;
+
+            }
+            else
+            {
+                Nodo Ant = Primero;
+                Nodo Aux = Primero;
+                while (Aux.Codigo != codigo)
+                {
+                    Ant = Aux;
+                    Aux = Aux.Siguiente;
+                }
+                Ant.Siguiente = Aux.Siguiente;
+            }
+
+        }
+    }
 
     }
-}
+
 
