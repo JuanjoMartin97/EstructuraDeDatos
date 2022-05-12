@@ -56,13 +56,6 @@ namespace EstructuraDeDatos
             }
         }
 
-        public void Eliminar()
-        {
-            if (Primero != null)
-            {
-                Primero = Primero.Siguiente;
-            }
-        }
 
         public void Recorrer(DataGridView Grilla)
         {
@@ -83,7 +76,7 @@ namespace EstructuraDeDatos
             Lista.Items.Clear();
             while (aux != null)
             {
-                Lista.Items.Add(aux.Codigo + " " + aux.Nombre);
+                Lista.Items.Add(aux.Codigo + " " + aux.Nombre + "" + aux.Tramite);
                 aux = aux.Siguiente;
             }
         }

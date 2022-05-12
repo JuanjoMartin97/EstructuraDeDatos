@@ -26,11 +26,13 @@ namespace EstructuraDeDatos
             Tramites.Recorrer(dgvListaSimple);
             Tramites.Recorrer(cmbLista);
 
+
+
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            Int16 x = Convert.ToInt16(cmbLista.Text);
+            Int32 x = Convert.ToInt32(cmbLista.Text);
 
             Tramites.Eliminar(x);
             Tramites.Recorrer(dgvListaSimple);
@@ -39,17 +41,14 @@ namespace EstructuraDeDatos
 
             BtnEliminar.Enabled = false;
 
+            txtCodigo.Text = "";
+            txtNombre.Text = "";
+            txtTramite.Text = "";
+
         }
         private void cmbLista_TextChanged(object sender, EventArgs e)
         {
-            //if (cmbLista.Text == "")
-            //{
-            //    BtnEliminar.Enabled = false;
-            //}
-            //else
-            //{
-            //    BtnEliminar.Enabled = true;
-            //}
+           
         }
 
         private void FrmListaSimple_Load(object sender, EventArgs e)
