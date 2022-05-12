@@ -29,13 +29,13 @@ namespace EstructuraDeDatos
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListaSimple));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lstListaSimple = new System.Windows.Forms.ListBox();
             this.dgvListaSimple = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GrbElementoEliminado = new System.Windows.Forms.GroupBox();
             this.cmbLista = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,11 +48,12 @@ namespace EstructuraDeDatos
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnAgregar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.GrbElementoEliminado.SuspendLayout();
             this.GrbNuevoElemento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -107,16 +108,6 @@ namespace EstructuraDeDatos
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.Width = 125;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::EstructuraDeDatos.Properties.Resources.ListasSimple;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(473, 212);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
             // 
             // GrbElementoEliminado
             // 
@@ -234,6 +225,16 @@ namespace EstructuraDeDatos
             this.BtnAgregar.UseVisualStyleBackColor = true;
             this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::EstructuraDeDatos.Properties.Resources.ListasSimple;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(473, 212);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmListaSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,16 +244,17 @@ namespace EstructuraDeDatos
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.GrbElementoEliminado);
             this.Controls.Add(this.GrbNuevoElemento);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmListaSimple";
             this.Text = "FrmListaSimple";
             this.Load += new System.EventHandler(this.FrmListaSimple_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.GrbElementoEliminado.ResumeLayout(false);
             this.GrbElementoEliminado.PerformLayout();
             this.GrbNuevoElemento.ResumeLayout(false);
             this.GrbNuevoElemento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

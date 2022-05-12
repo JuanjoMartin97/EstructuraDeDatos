@@ -31,6 +31,7 @@ namespace EstructuraDeDatos
         {
             FrmAcercaDe ObjVentana = new FrmAcercaDe();
             ObjVentana.ShowDialog();
+            
         }
 
         private void colaToolStripMenuItem_Click(object sender, EventArgs e)

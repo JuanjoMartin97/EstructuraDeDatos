@@ -29,6 +29,7 @@ namespace EstructuraDeDatos
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCola));
             this.GrbNuevoElemento = new System.Windows.Forms.GroupBox();
             this.txtTramite = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -282,6 +283,7 @@ namespace EstructuraDeDatos
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.GrbElementoEliminado);
             this.Controls.Add(this.GrbNuevoElemento);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinamica No lineal - Cola";
