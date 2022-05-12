@@ -8,7 +8,7 @@ namespace EstructuraDeDatos
 {
     class Nodo
     {
-        //Declarammos la clase del objeto 
+        //Declaramos la clase del objeto 
         //Los campos son privados
         private Int32 cod;
         private String nom;

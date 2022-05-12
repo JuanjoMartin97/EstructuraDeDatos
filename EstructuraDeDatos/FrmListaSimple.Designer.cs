@@ -59,9 +59,9 @@ namespace EstructuraDeDatos
             // 
             this.groupBox3.Controls.Add(this.lstListaSimple);
             this.groupBox3.Controls.Add(this.dgvListaSimple);
-            this.groupBox3.Location = new System.Drawing.Point(9, 241);
+            this.groupBox3.Location = new System.Drawing.Point(154, 295);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(741, 286);
+            this.groupBox3.Size = new System.Drawing.Size(747, 298);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Listado en una Lista y una Grilla";
@@ -110,9 +110,11 @@ namespace EstructuraDeDatos
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::EstructuraDeDatos.Properties.Resources.ListasSimple;
             this.pictureBox1.Location = new System.Drawing.Point(9, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 212);
+            this.pictureBox1.Size = new System.Drawing.Size(473, 212);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -121,7 +123,7 @@ namespace EstructuraDeDatos
             this.GrbElementoEliminado.Controls.Add(this.cmbLista);
             this.GrbElementoEliminado.Controls.Add(this.label4);
             this.GrbElementoEliminado.Controls.Add(this.BtnEliminar);
-            this.GrbElementoEliminado.Location = new System.Drawing.Point(522, 12);
+            this.GrbElementoEliminado.Location = new System.Drawing.Point(770, 12);
             this.GrbElementoEliminado.Name = "GrbElementoEliminado";
             this.GrbElementoEliminado.Size = new System.Drawing.Size(242, 212);
             this.GrbElementoEliminado.TabIndex = 9;
@@ -167,7 +169,7 @@ namespace EstructuraDeDatos
             this.GrbNuevoElemento.Controls.Add(this.label2);
             this.GrbNuevoElemento.Controls.Add(this.label1);
             this.GrbNuevoElemento.Controls.Add(this.BtnAgregar);
-            this.GrbNuevoElemento.Location = new System.Drawing.Point(279, 12);
+            this.GrbNuevoElemento.Location = new System.Drawing.Point(514, 12);
             this.GrbNuevoElemento.Name = "GrbNuevoElemento";
             this.GrbNuevoElemento.Size = new System.Drawing.Size(237, 212);
             this.GrbNuevoElemento.TabIndex = 8;
@@ -236,7 +238,7 @@ namespace EstructuraDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 536);
+            this.ClientSize = new System.Drawing.Size(1080, 605);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.GrbElementoEliminado);
