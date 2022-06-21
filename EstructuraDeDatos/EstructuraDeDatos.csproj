@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArbolBinario.cs" />
     <Compile Include="Cola.cs" />
     <Compile Include="FrmAcercaDe.cs">
       <SubType>Form</SubType>
@@ -53,11 +54,23 @@
     <Compile Include="FrmAcercaDe.Designer.cs">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmArbolBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArbolBinario.Designer.cs">
+      <DependentUpon>FrmArbolBinario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCola.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCola.Designer.cs">
       <DependentUpon>FrmCola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaDoble.Designer.cs">
+      <DependentUpon>FrmListaDoble.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmListaSimple.cs">
       <SubType>Form</SubType>
@@ -77,6 +90,7 @@
     <Compile Include="FrmVentanaPrincipal.Designer.cs">
       <DependentUpon>FrmVentanaPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListaDoble.cs" />
     <Compile Include="ListaSimple.cs" />
     <Compile Include="Nodo.cs" />
     <Compile Include="Pila.cs" />
@@ -85,8 +99,14 @@
     <EmbeddedResource Include="FrmAcercaDe.resx">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmArbolBinario.resx">
+      <DependentUpon>FrmArbolBinario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCola.resx">
       <DependentUpon>FrmCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaDoble.resx">
+      <DependentUpon>FrmListaDoble.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListaSimple.resx">
       <DependentUpon>FrmListaSimple.cs</DependentUpon>
@@ -107,6 +127,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="img\ArbolBinario.png.opdownload" />
     <None Include="img\cola_de_datos.jpg.opdownload" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -126,6 +147,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\ListasSimple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ListaDoble.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

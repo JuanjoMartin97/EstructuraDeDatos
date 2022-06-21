@@ -55,8 +55,6 @@ namespace EstructuraDeDatos
                 
             }
         }
-
-
         public void Recorrer(DataGridView Grilla)
         {
 
@@ -80,10 +78,8 @@ namespace EstructuraDeDatos
                 aux = aux.Siguiente;
             }
         }
-
         public void Recorrer(ComboBox Combo)
         {
-
             Nodo aux = Primero;
             Combo.Items.Clear();
             while (aux != null)
@@ -91,9 +87,7 @@ namespace EstructuraDeDatos
                 Combo.Items.Add(aux.Nombre);
                 aux = aux.Siguiente;
             }
-        }
-
-        
+        }   
         public void Eliminar(Int32 codigo)
         {
 

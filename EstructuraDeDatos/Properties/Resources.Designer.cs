@@ -63,9 +63,29 @@ namespace EstructuraDeDatos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ArbolBinario_png {
+            get {
+                object obj = ResourceManager.GetObject("ArbolBinario.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cola_de_datos_jpg {
             get {
                 object obj = ResourceManager.GetObject("cola_de_datos.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ListaDoble {
+            get {
+                object obj = ResourceManager.GetObject("ListaDoble", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

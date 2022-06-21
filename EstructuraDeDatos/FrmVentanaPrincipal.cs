@@ -51,5 +51,18 @@ namespace EstructuraDeDatos
             FrmListaSimple ObjVentana = new FrmListaSimple();
                 ObjVentana.ShowDialog();
         }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListaDoble ObjVentana = new FrmListaDoble();
+            ObjVentana.ShowDialog();
+        }
+
+        private void arbolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            FrmArbolBinario ObjVentana = new FrmArbolBinario();
+            ObjVentana.ShowDialog();
+        }
     }
 }
